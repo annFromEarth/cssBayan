@@ -1,15 +1,17 @@
 body {
 
     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(171,217,160,1) 100%);
-    transition: 0.5s ease-out;
+}
+
+.firediv{
+    background-image: url(./img/fire.png);
 
 }
 
 .memeBayan {
-    max-width: 700px;
-    margin: 0px auto;
-    padding: 40px 60px;
-    background: rgb(149, 149, 150);
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: Inter;
 }
 
 .memeItem {
@@ -17,12 +19,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    background: rgb(2, 2, 2);
+    /* background: rgb(149, 149, 150); */
+    margin: 0.1em 0;
+    border-radius: 1em;
 }
 
 .mainHeading {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 1em 0;
 }
 
 .memeContent {
@@ -31,106 +37,190 @@ body {
     justify-content: center;
     align-items: stretch;
     cursor: pointer;
+    padding: 1em 1.5em 0 1.5em;
+    max-height: 5em;
+    overflow: hidden;
+    transition: 0.7s ease;
 }
 
 .memeHeadin_Text {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
-    color: rgb(43, 40, 224)
+    color: rgb(43, 40, 224);
+    font-family: Inika;
+    padding: 1em, 0;
 }
 
 .memeInput:checked ~ .memeContent>.memeHeading>.memeHeadin_Text{
-    color: black
+    color: rgb(248, 245, 245)
 }
 
 .memeInput:checked ~ .memeContent>.memeHeading>.icon{
-    background-image: url(./img/cross_closed.png);
+    background-image: url(./img/cross_closed_red.png);
 }
 
 .icon {
     display: none;
-    transition: 0.5s ease-out;
-    width: 30px;
-    height: 30px;
-    background-image: url(./img/cross.png);
+    width: 1.9em;
+    height: 1.9em;
+    background-image: url(./img/cross_red.png);
 }
 
-.icon:hover {
-    background-image: url(./img/cross_closed.png);
+.memeContent:active .memeHeading>.memeHeadin_Text{
+    color: rgb(43, 40, 224);
+}
+
+.memeContent:active .memeHeading>.icon{
+    background-image: url(./img/cross_closed_blue.png);
 }
 
 .memeInput {
     width: 0;
     height: 0;
     appearance: none;
-    position: absolute;
 }
 
 .memeImg {
-    display: none;
-    width: 376px;
-    height: 470px;
+    display: block;
+    width: 17.5em;
+    height: 21em;
+    /* width: 0;
+    height: 0; */
     align-self: center;
-    margin: 20px 0;
+    margin: 1.5em 0 2.5em 0;
 }
+  
 .memeHeading {
     display: flex;
     justify-content: space-between;
 }
 
-.memeContent:hover .memeImg{
-    display: block;
+.memeInput:checked ~.memeContent{
+    max-height: 100em;
 }
 
-.memeInput:checked ~ .memeContent>.memeImg{
-    display: block;
-}
-
-.memeBayan:hover .memeHeadin_Text {
-    color: black;
-}
-
-.memeBayan:hover .icon {
-    display: block;
-}
-
+/* .memeInput:checked ~.memeImage{
+    width: 24em;
+    height: 28em;
+} */
 
 .img1 {
-    background-image: url(./img/stage1.png);
-    transition: background-image 0.2s ease-out;
+    background-image: url(./img/stage1_s.png);
 }
 
 .img2 {
-    background-image: url(./img/stage2.png);
-    transition: background-image 0.2s ease-out;
+    background-image: url(./img/stage2_s.png);
 }
 
 .img3 {
-    background-image: url(./img/stage3.png);
-    transition: background-image 0.2s ease-out;
+    background-image: url(./img/stage3_s.png);
 }
 
 .img4 {
-    background-image: url(./img/stage4.png);
-    transition: background-image 0.2s ease-out;
+    background-image: url(./img/stage4_s.png);
 }
 
 .img5 {
-    background-image: url(./img/stage5.png);
-    transition: background-image 0.2s ease-out;
+    background-image: url(./img/stage5_s.png);
 }
 
 .img6 {
-    background-image: url(./img/stage6.png);
-    transition: background-image 0.2s ease-out;
+    background-image: url(./img/stage6_s.png);
 }
 
 .img7 {
-    background-image: url(./img/stage7.png);
-    transition: background-image 0.2s ease-out;
+    background-image: url(./img/stage7_s.png);
 }
 
 .img8 {
-    background-image: url(./img/stage8.png);
-    transition: background-image 0.2s ease-out;
+    background-image: url(./img/stage8_s.png);
 }
+
+.RS__link__container {
+    margin: 3em 0 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:820px) {
+    .memeBayan {
+        max-width: 60%;}
+
+    .memeHeadin_Text {
+        font-size: 2em;
+    }
+
+    .mainHeading {
+        font-size: 4em;
+    }
+
+        .img1 {
+            background-image: url(./img/stage1.png);
+        }
+        
+        .img2 {
+            background-image: url(./img/stage2.png);
+        }
+        
+        .img3 {
+            background-image: url(./img/stage3.png);
+        }
+        
+        .img4 {
+            background-image: url(./img/stage4.png);
+        }
+        
+        .img5 {
+            background-image: url(./img/stage5.png);
+        }
+        
+        .img6 {
+            background-image: url(./img/stage6.png);
+        }
+        
+        .img7 {
+            background-image: url(./img/stage7.png);
+        }
+        
+        .img8 {
+            background-image: url(./img/stage8.png);
+        }
+    
+        .memeImg {
+            display: block;
+            width: 24em;
+            height: 28em;
+            /* width: 0;
+            height: 0; */
+            align-self: center;
+            margin: 1.5em 0 2.5em 0;
+        }
+          
+        
+
+
+}
+
+@media (min-width:1920px) {
+    .memeBayan {
+        max-width: 40%;}
+
+    .memeBayan:hover .icon {
+        display: block;
+    }
+    .memeBayan:hover .memeHeadin_Text {
+       color: rgb(248, 245, 245)
+    }
+    .memeContent:hover .memeImg{
+        width: 24em;
+        height: 28em;
+    }
+    .memeContent:hover .icon{
+        background-image: url(./img/cross_closed_red.png);}
+
+    .memeContent:hover {
+            max-height: 100em;
+        }
+
+}
+
