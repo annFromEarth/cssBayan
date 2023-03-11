@@ -62,6 +62,7 @@ body {
     width: 1.9em;
     height: 1.9em;
     background-image: url(./img/cross_red.png);
+    transition: 0.1s ease;
 }
 
 .memeContent:active .memeHeading>.memeHeadin_Text{
@@ -257,11 +258,11 @@ body {
         font-size: 5em;
     }
     .icon {
-        display: none;
+        scale: 0;
     }
 
     .memeBayan:hover .icon {
-        display: block;
+        scale: 1;
     }
     .memeBayan:hover .memeHeadin_Text {
        color: rgb(248, 245, 245)
