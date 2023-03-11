@@ -72,7 +72,7 @@ body {
     background-image: url(./img/cross_blue.png);
 }
 
-.memeContent:active .memeImg>.memeImgSelf.img1{
+/* .memeContent:active .memeImg>.memeImgSelf.img1{
     transition: 0.2s ease;
     opacity: 0.3;
 }
@@ -86,25 +86,21 @@ body {
 }
 
 .memeContent:active .memeImg>.memeImgSelf.img5{
-    /* opacity: 0.3; */
-    transition: none;
-    background-image: url(./img/fire_small_3.png);
+    transition: 0.2s ease;
+    opacity: 0.3;
 }
 .memeContent:active .memeImg>.memeImgSelf.img6{
-    /* opacity: 0.3; */
-    transition: none;
-    background-image: url(./img/fire_small_2.png);
+    transition: 0.2s ease;
+    opacity: 0.3;
 }
 .memeContent:active .memeImg>.memeImgSelf.img7{
-    /* opacity: 0.3; */
-    transition: none;
-    background-image: url(./img/fire_small.png);
+    transition: 0.2s ease;
+    opacity: 0.3;
 }
 .memeContent:active .memeImg>.memeImgSelf.img8{
-    /* opacity: 0.3; */
-    transition: none;
-    background-image: url(./img/fire_0.png);
-}
+    transition: 0.2s ease;
+    opacity: 0.3;
+} */
 
 .memeInput {
     width: 0;
@@ -286,6 +282,40 @@ body {
     }
     .memeContent:active .memeHeading>.icon{
          background-image: url(./img/cross_closed_blue.png);
+    }
+
+    .memeContent:active .memeImg>.memeImgSelf.img1{
+        transition: 0.2s ease;
+        opacity: 0.3;
+    }
+    .memeContent:active .memeImg>.memeImgSelf.img3{
+        transition: 0.2s ease;
+        opacity: 0.3;
+    }
+    .memeContent:active .memeImg>.memeImgSelf.img4{
+        transition: 0.2s ease;
+        opacity: 0.3;
+    }
+    
+    .memeContent:active .memeImg>.memeImgSelf.img5{
+        /* opacity: 0.3; */
+        transition: none;
+        background-image: url(./img/fire_small_3.png);
+    }
+    .memeContent:active .memeImg>.memeImgSelf.img6{
+        /* opacity: 0.3; */
+        transition: none;
+        background-image: url(./img/fire_small_2.png);
+    }
+    .memeContent:active .memeImg>.memeImgSelf.img7{
+        /* opacity: 0.3; */
+        transition: none;
+        background-image: url(./img/fire_small.png);
+    }
+    .memeContent:active .memeImg>.memeImgSelf.img8{
+        /* opacity: 0.3; */
+        transition: none;
+        background-image: url(./img/fire_0.png);
     }
 
 }
