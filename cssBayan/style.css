@@ -59,6 +59,7 @@ body {
 
 .icon {
     display: block;
+    background-size: cover;
     width: 1.9em;
     height: 1.9em;
     background-image: url(./img/cross_red.png);
@@ -119,6 +120,7 @@ body {
 }
 
 .memeImgSelf {
+    background-size: cover;
     width: 17.5em;
     height: 21em;
     scale: 0;
@@ -300,21 +302,25 @@ body {
     
     .memeContent:active .memeImg>.memeImgSelf.img5{
         /* opacity: 0.3; */
+        background-size:auto;
         transition: none;
         background-image: url(./img/fire_small_3.png);
     }
     .memeContent:active .memeImg>.memeImgSelf.img6{
         /* opacity: 0.3; */
+        background-size:auto;
         transition: none;
         background-image: url(./img/fire_small_2.png);
     }
     .memeContent:active .memeImg>.memeImgSelf.img7{
         /* opacity: 0.3; */
+        background-size:auto;
         transition: none;
         background-image: url(./img/fire_small.png);
     }
     .memeContent:active .memeImg>.memeImgSelf.img8{
         /* opacity: 0.3; */
+        background-size:auto;
         transition: none;
         background-image: url(./img/fire_0.png);
     }
