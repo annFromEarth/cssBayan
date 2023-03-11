@@ -42,7 +42,7 @@ body {
 }
 
 .memeHeadin_Text {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     color: rgb(248, 245, 245);
     font-family: Inika;
@@ -60,8 +60,8 @@ body {
 .icon {
     display: block;
     background-size: cover;
-    width: 1.9em;
-    height: 1.9em;
+    width: 1.5em;
+    height: 1.5em;
     background-image: url(./img/cross_red.png);
     transition: 0.1s ease;
 }
@@ -112,8 +112,9 @@ body {
 
 .memeImg {
     display: block;
-    width: 17.5em;
-    height: 21em;
+    /* aspect-ratio: 4 / 5; */
+    width: 12em;
+    height: 15em;
     
     align-self: center;
     margin: 1.5em 0 2.5em 0;
@@ -121,8 +122,8 @@ body {
 
 .memeImgSelf {
     background-size: cover;
-    width: 17.5em;
-    height: 21em;
+    width: 12em;
+    height: 15em;
     scale: 0;
     transition: 0.3s ease-in-out;
 }
